@@ -1,0 +1,764 @@
+{
+  "url_doc": "https://scholar.google.com/",
+  "url_github": "https://github.com",
+  "sampler_type": [
+    "random",
+    "disagreement",
+    "schedule"
+  ],
+  "feedback_type": [
+    "comparative",
+    "attribute",
+    "evaluative",
+    "visual",
+    "keypoint"
+  ],
+  "mode": [
+    "offline",
+    "online"
+  ],
+  "dataset_type": [
+    "existed",
+    "upload"
+  ],
+  "exsited_datasets": [
+    {
+      "label": "d4rl",
+      "value": 1,
+      "children": [
+        {
+          "label": "mujoco",
+          "value": 11,
+          "children": [
+            {
+              "label": "walker2d-medium-v2",
+              "value": 1101
+            },
+            {
+              "label": "walker2d-medium-replay-v2",
+              "value": 1102
+            },
+            {
+              "label": "walker2d-medium-expert-v2",
+              "value": 1103
+            },
+            {
+              "label": "walker2d-expert-v2",
+              "value": 1104
+            },
+            {
+              "label": "hopper-medium-v2",
+              "value": 1105
+            },
+            {
+              "label": "hopper-medium-replay-v2",
+              "value": 1106
+            },
+            {
+              "label": "hopper-medium-expert-v2",
+              "value": 1107
+            },
+            {
+              "label": "hopper-expert-v2",
+              "value": 1108
+            },
+            {
+              "label": "halfcheetah-medium-v2",
+              "value": 1109
+            },
+            {
+              "label": "halfcheetah-medium-replay-v2",
+              "value": 1210
+            },
+            {
+              "label": "halfcheetah-medium-expert-v2",
+              "value": 1211
+            },
+            {
+              "label": "halfcheetah-expert-v2",
+              "value": 1212
+            }
+          ]
+        },
+        {
+          "label": "antmaze",
+          "value": 12,
+          "children": [
+            {
+              "label": "antmaze-umaze-v2",
+              "value": 1201
+            },
+            {
+              "label": "antmaze-umaze-diverse-v2",
+              "value": 1202
+            },
+            {
+              "label": "antmaze-medium-play-v2",
+              "value": 1203
+            },
+            {
+              "label": "antmaze-medium-diverse-v2",
+              "value": 1204
+            },
+            {
+              "label": "antmaze-large-play-v2",
+              "value": 1205
+            },
+            {
+              "label": "antmaze-medium-diverse",
+              "value": 1206
+            }
+          ]
+        },
+        {
+          "label": "adroit",
+          "value": 13,
+          "children": [
+            {
+              "label": "pen-human-v1",
+              "value": 1301
+            },
+            {
+              "label": "pen-cloned-v1",
+              "value": 1302
+            },
+            {
+              "label": "door-human-v1",
+              "value": 1303
+            },
+            {
+              "label": "door-cloned-v1",
+              "value": 1304
+            },
+            {
+              "label": "pen-human-v1",
+              "value": 1305
+            },
+            {
+              "label": "hammer-human-v1",
+              "value": 1306
+            },
+            {
+              "label": "hammer-cloned-v1",
+              "value": 1307
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "atari",
+      "value": 2,
+      "children": [
+        {
+          "label": "adventure",
+          "value": 201,
+          "children": [
+            {
+              "label": "adventure-mixed-v0",
+              "value": 2011
+            },
+            {
+              "label": "adventure-medium-v0",
+              "value": 2012
+            },
+            {
+              "label": "adventure-expert-v0",
+              "value": 2013
+            }
+          ]
+        },
+        {
+          "label": "alien",
+          "value": 202,
+          "children": [
+            {
+              "label": "alien-mixed-v0",
+              "value": 2021
+            },
+            {
+              "label": "alien-medium-v0",
+              "value": 2022
+            },
+            {
+              "label": "alien-expert-v0",
+              "value": 2023
+            }
+          ]
+        },
+        {
+          "label": "amidar",
+          "value": 203,
+          "children": [
+            {
+              "label": "amidar-mixed-v0",
+              "value": 2031
+            },
+            {
+              "label": "amidar-medium-v0",
+              "value": 2032
+            },
+            {
+              "label": "amidar-expert-v0",
+              "value": 2033
+            }
+          ]
+        },
+        {
+          "label": "assault",
+          "value": 204,
+          "children": [
+            {
+              "label": "assault-mixed-v0",
+              "value": 2041
+            },
+            {
+              "label": "assault-medium-v0",
+              "value": 2042
+            },
+            {
+              "label": "assault-expert-v0",
+              "value": 2043
+            }
+          ]
+        },
+        {
+          "label": "asterix",
+          "value": 205,
+          "children": [
+            {
+              "label": "asterix-mixed-v0",
+              "value": 2051
+            },
+            {
+              "label": "asterix-medium-v0",
+              "value": 2052
+            },
+            {
+              "label": "asterix-expert-v0",
+              "value": 2053
+            }
+          ]
+        },
+        {
+          "label": "bankheist",
+          "value": 206,
+          "children": [
+            {
+              "label": "bankheist-mixed-v0",
+              "value": 2061
+            },
+            {
+              "label": "bankheist-medium-v0",
+              "value": 2062
+            },
+            {
+              "label": "bankheist-expert-v0",
+              "value": 2063
+            }
+          ]
+        },
+        {
+          "label": "battlezone",
+          "value": 207,
+          "children": [
+            {
+              "label": "battlezone-mixed-v0",
+              "value": 2071
+            },
+            {
+              "label": "battlezone-medium-v0",
+              "value": 2072
+            },
+            {
+              "label": "battlezone-expert-v0",
+              "value": 2073
+            }
+          ]
+        },
+        {
+          "label": "boxing",
+          "value": 208,
+          "children": [
+            {
+              "label": "boxing-mixed-v0",
+              "value": 2081
+            },
+            {
+              "label": "boxing-medium-v0",
+              "value": 2082
+            },
+            {
+              "label": "boxing-expert-v0",
+              "value": 2083
+            }
+          ]
+        },
+        {
+          "label": "breakout",
+          "value": 209,
+          "children": [
+            {
+              "label": "breakout-mixed-v0",
+              "value": 2091
+            },
+            {
+              "label": "breakout-medium-v0",
+              "value": 2092
+            },
+            {
+              "label": "breakout-expert-v0",
+              "value": 2093
+            }
+          ]
+        },
+        {
+          "label": "choppercommand",
+          "value": 210,
+          "children": [
+            {
+              "label": "choppercommand-mixed-v0",
+              "value": 2101
+            },
+            {
+              "label": "choppercommand-medium-v0",
+              "value": 2102
+            },
+            {
+              "label": "choppercommand-expert-v0",
+              "value": 2103
+            }
+          ]
+        },
+        {
+          "label": "crazyclimber",
+          "value": 211,
+          "children": [
+            {
+              "label": "crazyclimber-mixed-v0",
+              "value": 2111
+            },
+            {
+              "label": "crazyclimber-medium-v0",
+              "value": 2112
+            },
+            {
+              "label": "crazyclimber-expert-v0",
+              "value": 2113
+            }
+          ]
+        },
+        {
+          "label": "demonattack",
+          "value": 212,
+          "children": [
+            {
+              "label": "demonattack-mixed-v0",
+              "value": 2121
+            },
+            {
+              "label": "demonattack-medium-v0",
+              "value": 2122
+            },
+            {
+              "label": "demonattack-expert-v0",
+              "value": 2123
+            }
+          ]
+        },
+        {
+          "label": "freeway",
+          "value": 213,
+          "children": [
+            {
+              "label": "freeway-mixed-v0",
+              "value": 2131
+            },
+            {
+              "label": "freeway-medium-v0",
+              "value": 2132
+            },
+            {
+              "label": "freeway-expert-v0",
+              "value": 2133
+            }
+          ]
+        },
+        {
+          "label": "frostbite",
+          "value": 214,
+          "children": [
+            {
+              "label": "frostbite-mixed-v0",
+              "value": 2141
+            },
+            {
+              "label": "frostbite-medium-v0",
+              "value": 2142
+            },
+            {
+              "label": "frostbite-expert-v0",
+              "value": 2143
+            }
+          ]
+        },
+        {
+          "label": "gopher",
+          "value": 215,
+          "children": [
+            {
+              "label": "gopher-mixed-v0",
+              "value": 2151
+            },
+            {
+              "label": "gopher-medium-v0",
+              "value": 2152
+            },
+            {
+              "label": "gopher-expert-v0",
+              "value": 2153
+            }
+          ]
+        },
+        {
+          "label": "hero",
+          "value": 216,
+          "children": [
+            {
+              "label": "hero-mixed-v0",
+              "value": 2161
+            },
+            {
+              "label": "hero-medium-v0",
+              "value": 2162
+            },
+            {
+              "label": "hero-expert-v0",
+              "value": 2163
+            }
+          ]
+        },
+        {
+          "label": "jamesbond",
+          "value": 217,
+          "children": [
+            {
+              "label": "jamesbond-mixed-v0",
+              "value": 2171
+            },
+            {
+              "label": "jamesbond-medium-v0",
+              "value": 2172
+            },
+            {
+              "label": "jamesbond-expert-v0",
+              "value": 2173
+            }
+          ]
+        },
+        {
+          "label": "kangaroo",
+          "value": 218,
+          "children": [
+            {
+              "label": "kangaroo-mixed-v0",
+              "value": 2181
+            },
+            {
+              "label": "kangaroo-medium-v0",
+              "value": 2182
+            },
+            {
+              "label": "kangaroo-expert-v0",
+              "value": 2183
+            }
+          ]
+        },
+        {
+          "label": "krull",
+          "value": 219,
+          "children": [
+            {
+              "label": "krull-mixed-v0",
+              "value": 2191
+            },
+            {
+              "label": "krull-medium-v0",
+              "value": 2192
+            },
+            {
+              "label": "krull-expert-v0",
+              "value": 2193
+            }
+          ]
+        },
+        {
+          "label": "kungfumaster",
+          "value": 220,
+          "children": [
+            {
+              "label": "kungfumaster-mixed-v0",
+              "value": 2201
+            },
+            {
+              "label": "kungfumaster-medium-v0",
+              "value": 2202
+            },
+            {
+              "label": "kungfumaster-expert-v0",
+              "value": 2203
+            }
+          ]
+        },
+        {
+          "label": "mspacman",
+          "value": 221,
+          "children": [
+            {
+              "label": "mspacman-mixed-v0",
+              "value": 2211
+            },
+            {
+              "label": "mspacman-medium-v0",
+              "value": 2212
+            },
+            {
+              "label": "mspacman-expert-v0",
+              "value": 2213
+            }
+          ]
+        },
+        {
+          "label": "pong",
+          "value": 222,
+          "children": [
+            {
+              "label": "pong-mixed-v0",
+              "value": 2221
+            },
+            {
+              "label": "pong-medium-v0",
+              "value": 2222
+            },
+            {
+              "label": "pong-expert-v0",
+              "value": 2223
+            }
+          ]
+        },
+        {
+          "label": "privateeye",
+          "value": 223,
+          "children": [
+            {
+              "label": "privateeye-mixed-v0",
+              "value": 2231
+            },
+            {
+              "label": "privateeye-medium-v0",
+              "value": 2232
+            },
+            {
+              "label": "privateeye-expert-v0",
+              "value": 2233
+            }
+          ]
+        },
+        {
+          "label": "qbert",
+          "value": 224,
+          "children": [
+            {
+              "label": "qbert-mixed-v0",
+              "value": 2241
+            },
+            {
+              "label": "qbert-medium-v0",
+              "value": 2242
+            },
+            {
+              "label": "qbert-expert-v0",
+              "value": 2243
+            }
+          ]
+        },
+        {
+          "label": "roadrunner",
+          "value": 225,
+          "children": [
+            {
+              "label": "roadrunner-mixed-v0",
+              "value": 2251
+            },
+            {
+              "label": "roadrunner-medium-v0",
+              "value": 2252
+            },
+            {
+              "label": "roadrunner-expert-v0",
+              "value": 2253
+            }
+          ]
+        },
+        {
+          "label": "seaquest",
+          "value": 226,
+          "children": [
+            {
+              "label": "seaquest-mixed-v0",
+              "value": 2261
+            },
+            {
+              "label": "seaquest-medium-v0",
+              "value": 2262
+            },
+            {
+              "label": "seaquest-expert-v0",
+              "value": 2263
+            }
+          ]
+        },
+        {
+          "label": "upndown",
+          "value": 227,
+          "children": [
+            {
+              "label": "upndown-mixed-v0",
+              "value": 2271
+            },
+            {
+              "label": "upndown-medium-v0",
+              "value": 2272
+            },
+            {
+              "label": "upndown-expert-v0",
+              "value": 2273
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "smarts",
+      "value": 3,
+      "children": [
+        {
+          "label": "smarts",
+          "value": 31,
+          "children": [
+            {
+              "label": "cruise",
+              "value": 311
+            },
+            {
+              "label": "cutin",
+              "value": 312
+            },
+            {
+              "label": "left_c",
+              "value": 313
+            }
+          ]
+        }
+      ]  
+    },
+    {
+      "label": "vd4rl",
+      "value": 4,
+      "children": [
+        {
+          "label": "walker",
+          "value": 41,
+          "children": [
+            {
+              "label": "walker_walk_medium",
+              "value": 411
+            },
+            {
+              "label": "walker_walk_medium_expert",
+              "value": 412
+            }
+          ]
+        },
+        {
+          "label": "cheetah",
+          "value": 42,
+          "children": [
+            {
+              "label": "cheetah_run_medium",
+              "value": 421
+            },
+            {
+              "label": "cheetah_run_medium_expert",
+              "value": 422
+            }
+          ]
+        },
+        {
+          "label": "humanoid",
+          "value": 43,
+          "children": [
+            {
+              "label": "humanoid_walk_medium",
+              "value": 431
+            },
+            {
+              "label": "humanoid_walk_medium_expert",
+              "value": 432
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "minigrid",
+      "value": 5,
+      "children": [
+        {
+          "label": "minigrid",
+          "value": 51,
+          "children": [
+            {
+              "label": "minigrid-fourrooms-v0",
+              "value": 511
+            },
+            {
+              "label": "minigrid-fourrooms-random-v0",
+              "value": 512
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "query_num": {
+    "type": "integer",
+    "default": 5,
+    "minimum": 1,
+    "maximum": 20
+  },
+  "query_length": {
+    "type": "integer",
+    "default": 100,
+    "minimum": 1,
+    "maximum": 500
+  },
+  "video_width": {
+    "type": "integer",
+    "default": 300,
+    "minimum": 84,
+    "maximum": 300
+  },
+  "video_height": {
+    "type": "integer",
+    "default": 300,
+    "minimum": 84,
+    "maximum": 300
+  },
+  "fps": {
+    "type": "integer",
+    "default": 25,
+    "minimum": 1,
+    "maximum": 50
+  }
+}
