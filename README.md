@@ -45,6 +45,8 @@
 This is the **Uni-RLHF** platform implementation of the paper ***Uni-RLHF: Universal Platform and Benchmark Suite for Reinforcement Learning with Diverse Human Feedback*** by [Yifu Yuan](https://yifu-yuan.github.io/), [Jianye Hao](http://www.icdai.org/jianye.html), [Yi Ma](https://mayi1996.top/), [Zibin Dong](https://zibindong.github.io/), [Hebin Liang](), [Jinyi Liu](), [Zhixin Feng](), [Kai Zhao](), [Yan Zheng](https://yanzzzzz.github.io/). Uni-RLHF aims
 to provide a complete workflow from *real human feedback*, fostering progress in the development of RLHF in decision making domain. Here we develops a user-friendly annotation interface tailored to various feedback types, compatible with a wide range of mainstream RL environments. We then establish a systematic pipeline of crowdsourced annotations, resulting in [**large-scale annotated dataset**](https://drive.google.com/drive/folders/1JMWyl0iAm2JJ5pOBW5M9kTOj6pJn8H3N?usp=drive_link) (≈15 million steps). Also, we provide **offline RLHF baselines** using collected feedback datasets and various design choice in the [Clean Offline RLHF](https://github.com/pickxiguapi/Clean-Offline-RLHF).
 
+## Important note: This repository only contains code related to the annotation platform. For related datasets and model training code, please refer to: [Clean-Offline-RLHF](https://github.com/pickxiguapi/Clean-Offline-RLHF). 
+
 <p align="center">
     <br>
     <img src="assets/framework.png" width="700"/>
@@ -137,7 +139,7 @@ Uni-RLHF supports the following classic datasets, a full list of all tasks is [a
    ```
 * Install [MiniGrid](https://github.com/Farama-Foundation/Minigrid) dependencies. There are the same dependencies as the D4RL datasets.  
 * Install [SMARTS](https://github.com/huawei-noah/SMARTS/tree/master) dependencies. We employed online reinforcement learning algorithms to train two agents for datasets collection, each designed specifically for the respective scenario. The first agent demonstrates medium driving proficiency, achieving a success rate ranging from 40% to 80% in its designated scenario. In contrast, the second agent exhibits expert-level performance, attaining a success rate of 95% or higher in the same scenario. For dataset construction, 800 driving trajectories were collected using the intermediate agent, while an additional 200 were gathered via
-the expert agent. By integrating the two datasets, **we compiled a mixed dataset encompassing 1,000 driving trajectories.** We upload full datasets containing image (for rendering) and vector (for training) on [GoogleDrive](https://drive.google.com/drive/folders/15HpW6nlJexJP5A4ygGk-1plqt9XdcWGI). **These must be downloaded before running the code.** And the right file structure is the same as v-d4rl dataset.
+the expert agent. By integrating the two datasets, **we compiled a mixed dataset encompassing 1,000 driving trajectories.** We upload full datasets containing image (for rendering) and vector (for training) on [GoogleDrive]( https://drive.google.com/file/d/1_KNH8EziubY2s3r6ySSSzLKnlXexInPp/view). **These must be downloaded before running the code.** And the right file structure is the same as v-d4rl dataset.
 * Upload customization datasets. The customization datasets must be `h5df` format and contain `observations` and `terminal` keys:
 
     ```sh
